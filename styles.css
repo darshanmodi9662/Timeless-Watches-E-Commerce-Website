@@ -1,0 +1,526 @@
+/* General styling */
+body {
+    margin: 0;
+    padding-top: 56px; /* Prevents content from going under the navbar */
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navbar Customization */
+.navbar {
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #e0e0e0;
+}
+
+.nav-link {
+    color: #e0e0e0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f0a500;
+}
+
+/* Cart and Search Icons */
+/* .nav-link i {
+    font-size: 1.2rem;
+} */
+
+/* .cart-count {
+    font-size: 0.8rem;
+    padding: 0.2em 0.4em;
+} */
+/* General Dark Theme Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background-image: url('images/luxury-watch.jpg'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
+}
+
+.container {
+    position: relative;
+    z-index: 1; /* Place the text above the overlay */
+}
+
+/* Hero Text */
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f0a500;
+    margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #e0e0e0;
+    margin-bottom: 1.5rem;
+}
+
+/* Hero Button */
+.hero-btn {
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    background-color: #f0a500;
+    color: #121212;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #ffcc66;
+    color: #121212;
+}
+/* Featured Collection Section */
+.featured-collection {
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text color */
+    padding: 60px 0; /* Vertical padding */
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #f0a500; /* Accent color */
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    color: #e0e0e0; /* Light grey color */
+    margin-bottom: 2rem;
+}
+
+/* Collection Item */
+.collection-item {
+    background-color: #222; /* Darker background for items */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1rem; /* Inner padding */
+    text-align: center; /* Centered text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    position: relative; /* Position relative for glow effect */
+}
+
+.collection-item img {
+    width: 100%; /* Full width */
+    border-radius: 8px; /* Rounded corners for images */
+    height: auto; /* Maintain aspect ratio */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
+}
+
+/* Glowing Border Effect */
+.collection-item:hover img {
+    box-shadow: 0 0 20px 4px rgba(240, 165, 0, 0.7); /* Glowing border effect */
+}
+
+.collection-name {
+    font-size: 1.25rem; /* Font size for collection name */
+    color: #f0a500; /* Accent color */
+    margin: 0.75rem 0 0.5rem;
+}
+
+.collection-desc {
+    font-size: 0.9rem; /* Font size for description */
+    color: #b0b0b0; /* Light grey color for description */
+}
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text color */
+    padding: 60px 0; /* Vertical padding */
+}
+
+.section-title {
+    font-size: 2.5rem; /* Title font size */
+    color: #f0a500; /* Accent color */
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    font-size: 1.25rem; /* Subtitle font size */
+    color: #e0e0e0; /* Light grey color */
+    margin-bottom: 2rem;
+}
+
+/* Feature Card */
+.feature-card {
+    background-color: #222; /* Darker background for cards */
+    border-radius: 8px; /* Rounded corners */
+    padding: 2rem; /* Inner padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.feature-card i {
+    font-size: 3rem; /* Icon size */
+    color: #f0a500; /* Accent color for icons */
+    margin-bottom: 1rem; /* Space below the icon */
+}
+
+.feature-title {
+    font-size: 1.5rem; /* Title font size */
+    margin: 1rem 0; /* Margin for titles */
+}
+
+.feature-description {
+    font-size: 1rem; /* Description font size */
+    color: #b0b0b0; /* Light grey for description */
+}
+/* Customer Testimonials Section */
+.customer-testimonials {
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text color */
+    padding: 60px 0; /* Vertical padding */
+}
+
+.section-title {
+    font-size: 2.5rem; /* Title font size */
+    color: #f0a500; /* Accent color */
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    font-size: 1.25rem; /* Subtitle font size */
+    color: #e0e0e0; /* Light grey color */
+    margin-bottom: 2rem;
+}
+
+/* Testimonial Carousel */
+.testimonial-carousel {
+    display: flex; /* Flexbox layout for carousel */
+    justify-content: center; /* Centering */
+    gap: 20px; /* Space between cards */
+    overflow: hidden; /* Hide overflow for a cleaner look */
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background-color: #222; /* Darker background for cards */
+    border-radius: 8px; /* Rounded corners */
+    padding: 2rem; /* Inner padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    width: 300px; /* Fixed width for cards */
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.testimonial-text {
+    font-size: 1rem; /* Testimonial text size */
+    margin-bottom: 1rem; /* Space below testimonial text */
+    color: #b0b0b0; /* Light grey for testimonial text */
+    font-style: italic; /* Italic style for emphasis */
+}
+
+.customer-name {
+    font-size: 1.25rem; /* Customer name font size */
+    margin: 0.5rem 0; /* Margin for spacing */
+}
+
+.customer-location {
+    font-size: 0.9rem; /* Location font size */
+    color: #e0e0e0; /* Light grey color for location */
+}
+
+/* Star Rating */
+.star-rating {
+    margin-top: 10px; /* Space above stars */
+}
+
+.star {
+    font-size: 1.5rem; /* Star size */
+    color: #f0a500; /* Gold color for stars */
+}
+
+.star.filled {
+    color: #f0a500; /* Color for filled stars */
+}
+/* Star Rating */
+.star-rating {
+    margin-top: 10px; /* Space above stars */
+}
+
+.star {
+    font-size: 1.5rem; /* Star size */
+    color: #f0a500; /* Gold color for stars */
+    position: relative; /* Position for glow effect */
+    transition: text-shadow 0.3s ease; /* Smooth transition for glow */
+}
+
+.star.filled {
+    color: #f0a500; /* Color for filled stars */
+}
+
+/* Glow effect on hover */
+.star:hover {
+    text-shadow: 
+        0 0 5px #f0a500, 
+        0 0 10px #f0a500, 
+        0 0 15px #f0a500, 
+        0 0 20px #f0a500; /* Creates the glow effect */
+}
+
+/* Optional: Apply glow effect to filled stars by default */
+.star.filled {
+    text-shadow: 
+        0 0 5px #f0a500, 
+        0 0 10px #f0a500, 
+        0 0 15px #f0a500; /* Creates a glowing effect on filled stars */
+}
+/* Profile Picture */
+.profile-pic {
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 1rem; /* Space below the profile picture */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Profile Picture Hover Effect */
+.profile-pic:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+/* Profile Picture */
+.profile-pic {
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 1rem; /* Space below the profile picture */
+    box-shadow: 0 0 5px rgba(240, 165, 0, 0.5), 0 0 15px rgba(240, 165, 0, 0.3); /* Glowing border effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Profile Picture Hover Effect */
+.profile-pic:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    box-shadow: 0 0 10px rgba(240, 165, 0, 0.8), 0 0 25px rgba(240, 165, 0, 0.6); /* Intensified glowing effect on hover */
+}
+/* Blog / Inspiration Section */
+.blog-inspiration {
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 60px 0; /* Vertical padding */
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #f0a500; /* Accent color */
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(240, 165, 0, 0.7); /* Glow effect */
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    color: #e0e0e0; /* Light gray */
+    margin-bottom: 3rem;
+}
+
+/* Blog Card Styles */
+.blog-card {
+    background-color: #222; /* Darker card background */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevents overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scale on hover */
+}
+
+.blog-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 0 20px rgba(240, 165, 0, 1); /* Glowing effect on hover */
+}
+
+.blog-image {
+    width: 100%; /* Full width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Cover the area */
+}
+
+.blog-content {
+    padding: 15px; /* Inner padding */
+}
+
+.blog-title {
+    font-size: 1.5rem;
+    color: #f0a500; /* Accent color */
+    margin: 1rem 0; /* Margin above and below */
+    text-shadow: 0 0 10px rgba(240, 165, 0, 0.7); /* Glow effect */
+}
+
+.blog-excerpt {
+    font-size: 1rem;
+    color: #e0e0e0; /* Light gray */
+    margin-bottom: 1rem; /* Space below */
+}
+
+/* Button Style */
+.btn-outline-light {
+    border-color: #f0a500; /* Button border color */
+    color: #f0a500; /* Button text color */
+}
+
+.btn-outline-light:hover {
+    background-color: #f0a500; /* Background color on hover */
+    color: #121212; /* Text color on hover */
+}
+/* Newsletter Subscription Section */
+.newsletter-subscription {
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 60px 0; /* Vertical padding */
+    text-align: center; /* Centered text */
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #f0a500; /* Accent color */
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(240, 165, 0, 0.7); /* Glow effect */
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    color: #e0e0e0; /* Light gray */
+    margin-bottom: 3rem;
+}
+
+/* Subscription Form */
+.subscription-form {
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Centering */
+    gap: 1rem; /* Space between input and button */
+}
+
+.form-control {
+    width: 300px; /* Fixed width for input */
+    border: 2px solid #f0a500; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Inner padding */
+    background-color: #222; /* Input background */
+    color: #ffffff; /* Input text color */
+    transition: border 0.3s ease; /* Transition effect for border */
+}
+
+.form-control:focus {
+    border-color: #ffcc66; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(240, 165, 0, 0.7); /* Glow effect on focus */
+}
+
+.btn-primary {
+    background-color: #f0a500; /* Button background */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Button padding */
+    transition: background-color 0.3s ease; /* Transition effect for background */
+}
+
+.btn-primary:hover {
+    background-color: #ffcc66; /* Button color on hover */
+    color: #121212; /* Text color on hover */
+}
+/* Footer Section */
+.footer {
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 40px 0; /* Vertical padding */
+}
+
+.footer-links {
+    margin-bottom: 1.5rem; /* Space below links */
+}
+
+.footer-link {
+    color: #e0e0e0; /* Light gray text */
+    margin: 0 15px; /* Horizontal spacing */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s ease; /* Transition effect for color */
+}
+
+.footer-link:hover {
+    color: #f0a500; /* Change color on hover */
+}
+
+.social-icons {
+    margin-bottom: 1rem; /* Space below social icons */
+}
+
+.social-icon {
+    color: #e0e0e0; /* Icon color */
+    font-size: 1.5rem; /* Icon size */
+    margin: 0 10px; /* Horizontal spacing */
+    transition: color 0.3s ease; /* Transition effect for color */
+}
+
+.social-icon:hover {
+    color: #f0a500; /* Change color on hover */
+}
+
+.footer-text {
+    font-size: 0.875rem; /* Smaller text size */
+    color: #b0b0b0; /* Light gray for copyright text */
+}
+/* Back-to-Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px; /* Distance from the bottom */
+    right: 30px; /* Distance from the right */
+    background-color: #f0a500; /* Button color */
+    color: #121212; /* Icon color */
+    border: none; /* No border */
+    border-radius: 50%; /* Circular shape */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center icon vertically */
+    justify-content: center; /* Center icon horizontally */
+    font-size: 1.5rem; /* Icon size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    opacity: 0.7; /* Semi-transparent */
+    transition: opacity 0.3s, transform 0.3s; /* Transition effects */
+}
+
+.back-to-top:hover {
+    opacity: 1; /* Full opacity on hover */
+    transform: scale(1.1); /* Slightly grow on hover */
+}
+
+.back-to-top:active {
+    transform: scale(0.9); /* Shrink on click */
+}
